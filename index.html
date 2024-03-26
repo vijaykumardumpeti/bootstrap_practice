@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+        />
+
+    <!-- for custome styling -->
+    <link href="index.css" rel="stylesheet" />
+
+    <!-- for breakpoints im using .scss file -->
+    <link href="custom-index.css" rel="stylesheet" />
+
+    <title>Bootstrap practice</title>
+  </head>
+  <body>
+    <!-- Custom CSS -->
+    <style>
+      /* Add this custom CSS for the full screen effect */
+      .fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999; /* Ensure it's above other content */
+      }
+    </style>
+
+    <script>
+      // Get the element you want to toggle fullscreen
+      const element = document.getElementById("Breakpoints");
+
+      // Add a click event listener
+      element.addEventListener("click", function () {
+        // Toggle the fullscreen class on click
+        element.classList.toggle("fullscreen");
+      });
+    </script>
+
+    <!-- applying all the concepts  -->
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+            <img
+                height="40px"
+                src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1711344324/1631310623587_qo2cs4.jpg"
+            />
+            <small class="fw-bold">Tectoro</small>
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Breakpoints"
+                    >Breakpoints</a
+                >
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Colors&Topography">Colors&Topography</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Buttons&Links">Buttons&Links</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Utility Classes">Utility Classes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Containers">Containers</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Grid Layout">Grid Layout</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Cards">Cards</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Form">Form</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#Accordion">Accordion</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" target="_self" href="#List Group">List Group</a>
+                </li>
+                <li class="nav-item">
+                <!-- <a class="nav-link" target="_parent" href="#Bootstrap Icons">Bootstrap Icons</a> -->
+                </li>
+                <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li> -->
+                <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+            </ul>
+            <a class="navbar-brand d-none d-md-block d-lg-block" href="#">
+                <img
+                height="40px"
+                src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1711344324/1631310623587_qo2cs4.jpg"
+                />
+                <small class="fw-bold">Tectoro</small>
+            </a>
+            <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- applying all the concepts  -->
+
+    <!-- Breakpoints -->
+
+
+
+    <section id="Colors&Topography">
+        <div class="container">
+            <div class="row justify-content-center my-1 text-center">
+                <h4>Typography</h4>
+                <div class="col-6 d-flex flex-column justify-content-center text-center">
+                    <h1>h1. Bootstrap heading</h1>
+                    <h2>h2. Bootstrap heading</h2>
+                    <h3>h3. Bootstrap heading</h3>
+                    <h4>h4. Bootstrap heading</h4>
+                    <h5>h5. Bootstrap heading</h5>
+                    <h6>h6. Bootstrap heading</h6>
+                    <!-- text-muted -->
+                    <h3>
+                        Fancy display heading
+                        <small class="text-muted">With faded secondary text</small>
+                    </h3>
+                    <!-- display property -->
+                    <h1 class="display-1">Display 1</h1>
+                    <h1 class="display-2">Display 2</h1>
+                    <h1 class="display-3">Display 3</h1>
+                    <h1 class="display-4">Display 4</h1>
+                    <h1 class="display-5">Display 5</h1>
+                    <h1 class="display-6">Display 6</h1>
+                    <!-- lead -->
+                    <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+                    <!-- highliting the text with mark -->
+                    <p>You can use the mark tag to <mark>highlight the text.with 'mark'</mark></p>
+                    <!-- deleted text -->
+                    <p><del>This line of text is meant to be treated as deleted text.with 'del'</del></p>
+                    <p><strong>This line rendered as bold text. with 'strong'</strong></p>
+                    <p><em>This line rendered as italicized text. with 'em'</em></p>
+                    <!-- text alignment -->
+                    <p class="text-start">Start aligned text on all viewport sizes. with: 'text-start' </p>
+                    <p class="text-center">Center aligned text on all viewport sizes. with: 'text-center' </p>
+                    <p class="text-end">End aligned text on all viewport sizes. with: 'text-end' </p>
+
+                    <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider. with: 'text-sm-start' </p>
+                    <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider. with: 'text-md-start' </p>
+                    <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider. with: 'text-lg-start' </p>
+                    <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider. with: 'text-xl-start'</p>
+
+                    <!-- text wrap & badge -->
+                    <div class="bg-primary badge text-wrap" style="width: 6rem">
+                        This text should wrap
+                    </div>
+                    <!-- upperize or capitalize or lowerize the text -->
+                    <p class="text-lowercase">Lowercased text.</p>
+                    <p class="text-uppercase">Uppercased text.</p>
+                    <p class="text-capitalize">CapiTaliZed text.</p>
+                    <!-- Font size -->
+                    <p class="fs-1">.fs-1 text</p>
+                    <p class="fs-2">.fs-2 text</p>
+                    <p class="fs-3">.fs-3 text</p>
+                    <p class="fs-4">.fs-4 text</p>
+                    <p class="fs-6">.fs-5 text</p>
+                    <p class="fs-7">.fs-6 text</p>
+
+                    <!-- font style & font weight -->
+                    <p class="fw-bold">Bold text.</p>
+                    <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                    <p class="fw-normal">Normal weight text.</p>
+                    <p class="fw-light">Light weight text.</p>
+                    <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+                    <p class="fst-italic">Italic text.</p>
+                    <p class="fst-normal">Text with normal font style</p>
+
+                    <!-- line height -->
+                    <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <!-- mono space -->
+                    <p class="font-monospace">This is in monospace</p>
+                    <p class="text-muted">
+                        Muted text with a <a href="#" class="text-reset">reset link</a>.
+                    </p>
+                    <!-- colours -->
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning bg-dark">.text-warning</p>
+                    <p class="text-info bg-dark">.text-info</p>
+                    <p class="text-light bg-dark">.text-light</p>
+                    <p class="text-dark">.text-dark</p>
+                    <p class="text-body">.text-body</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white bg-dark">.text-white</p>
+                    <p class="text-black-50">.text-black-50</p>
+                    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+                    <h1 class="fw-bold">Naming a source</h1>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Buttons&Links">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center text-center">
+                    <h4>Buttons&Links</h4>
+                    <h4>Buttons</h4>
+                    <!-- added custom breakpoints -->
+                    <div class="button-container">
+                        <button class="btn btn-outline-success">Click Me</button>
+                        <button class="btn btn-outline-danger">Click Me</button>
+                        <button class="btn btn-outline-primary">Click Me</button>
+                        <button class="btn btn-success">Click Me</button>
+                        <button class="btn btn-primary">Click Me</button>
+                        <button class="btn btn-danger">Click Me</button>
+                        <button class="btn btn-secondary">Click Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Accordion">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Utility Classes">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center text-center">
+                    <h4>Utility Classes</h4>
+                    <h4>Visibility</h4>
+                    <p style="visibility: visible;">hello vijaykumar</p>
+                    <p style="visibility: hidden;">hello vijaykumar</p>                                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Bootstrap Icons">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <i class="fa-sharp fa-solid fa-house fs-5"></i>
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="List Group">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action active">A fourth link item</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Breakpoints">
+        <div class="container">
+            <div class="row justify-content-center me-0">
+                <div class="col-md-7 d-flex flex-column justify-content-center text-center">
+                        <h4 class="">Increase Your Skills</h4>
+                        <small class="lead">
+                            Increasing your skills is a dynamic and rewarding process that
+                            involves continual learning, focused practice, seeking feedback,
+                            and engaging with communities. It begins with adopting a growth
+                            mindset, where you recognize that your abilities can be developed
+                            through effort and dedication. Setting clear goals helps provide
+                            direction and motivation, while consistent practice reinforces
+                            your knowledge and builds proficiency. Seeking feedback from
+                            mentors and peers allows you to identify areas for improvement and
+                            refine your skills further. Engaging with communities and sharing
+                            your work fosters collaboration, inspiration, and mutual support.
+                            Reflecting on your progress and adjusting your approach based on
+                            feedback and experience enables you to evolve and grow
+                            continuously. Ultimately, the journey of skill improvement is
+                            about embracing curiosity, resilience, and a commitment to
+                            lifelong learning, leading to personal and professional growth.
+                        </small>
+                </div>
+                <div class="col-5 d-flex justify-content-center text-center">
+                    <img height="500px"  class="" alt="skills image" src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1710398270/Course_app-rafiki_sdts15.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="Cards">
+        <div class="container-md-fluid">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1710398222/Creative_writing-rafiki_csmivd.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1710398098/Developer_activity-bro_pywxjw.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dymmp1vtz/image/upload/v1702534217/Sign_up-bro_pch34p.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Form">
+        <div class="container mb-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-11 bg-light p-2 mb-3 border rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="please enter your name"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="please enter your email address"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="please enter your password"/>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios2">
+                            Female
+                        </label>
+                    </div>
+                    <!-- <label for="formFile" class="form-label">Resume</label> -->
+
+                    <div class="mb-3 mt-3">
+                        <label for="formFile" class="form-label">Upload Your Resume</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <h1 class="jay-styling">hello vijaykumar</h1>
+    </section> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Styles for medium screens and up */
+@include media-breakpoint-up(sm) {
+  .jay-styling {
+    display: block;
+  }
+}
+
+// @include media-breakpoint-down(){
+
+// }
+
+@include media-breakpoint-only(xs){
+    button:nth-child(3){
+        font-size: 6px;
+    }
+}
